@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+
+
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+
+}
+.navigation a:hover::after{
+    transform-origin:left;
+    transform: scale(1);
+}
+.navigation .buttonlogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border:  2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #162938;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    border-radius:30px;
+}
+.buttonOrganise-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border:  2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #162938;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+.buttonOrganise-popup:hover{
+    background: #fff;
+    color: #162938;
+
+}
+.buttonDonate-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border:  2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #162938;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+.buttonDonate-popup:hover{
+    background: #fff;
+    color: #162938;
+
+}
+.buttonSponsore-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border:  2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #162938;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+.buttonSponsore-popup:hover{
+    background: #fff;
+    color: #162938;
+
+}
+
+
+body{
+    background: linear-gradient(#2f6e9c,#73a5c8);
+
+}
+.row{
+    background: #467596;
+    background-size: 100;
+    width: 80%;
+    margin: 10% auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.col{
+   flex-basis: 25%;
+   text-align: center;
+   overflow: hidden;
+   position: relative;
+  
+}
+.col img{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+    /*screen: 100%;*/
+}
+
+.col p{
+    margin: 20px 0;
+    width:350px;
+}
+.col:hover img{
+    transform: scale(1.1);
+}
+.col span{
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid #467596;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.col  .arrow{
+    right: unset;
+    left: 0;
+    border-left: 15px solid #467596;
+    border-right: 15px solid transparent;
+}
+@media screen and (max-width: 770px){
+    .row{
+        width: 95%;
+    }
+    .col{
+        flex-basis: 50%;
+        font-size: 14px;
+    }
+    
+}
