@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Numito:400,900|Montserrat|Roboto");
+
+body {
+background: linear-gradient(to right,#2f6e9c, #7fb2d6);
+overflow-x: hidden;
+}
+.container {
+width: 750px;
+background: #fff;
+height: 800px;
+ margin: 0 auto;
+position: relative ;
+margin-top: 10 ;
+box-shadow: 2px 5px 20 px rgba(119,119,119,.5);
+}
+.leftbox {
+    top: -5%;
+    float: left;
+    position: absolute;
+    left: 5%;
+    width: 15%; 
+    height: 110%;
+    background: #2f6e9c;
+    box-shadow: 3px 3px 10px rgba(119,119,119,.5);
+    border: 1.lem solid #fff;
+}
+.nav a {
+    padding: 35px;
+    list-style: none;
+    color: #fff;
+    font-size: 1.lem;
+    display: block;
+    transition: all .3s ease-in-out;
+}
+nav a:hover {
+ color: #2210ac;
+ cursor: pointer;
+ transform: scale(1.2);
+}
+nav a:first-chil{
+ margin-top: 7px;
+}
+nav a.active {
+ color: #2710ac;
+}
+.rightbox {
+ width: 60%;
+ margin-left: 27%;
+ padding-top: 5px;
+}
+.tabshow {
+ transition: all .5s ease-in;
+ width: 80%;
+ position: absolute;
+}
+h1 {
+ font-family: "Montserrat", sans-serif;
+ color: #183889;
+ font-size: 3rem;
+ margin-top: 40px;
+ margin-bottom: 35px;
+}
+h2 {
+ color: #777;
+ font-family: "Roboto",sans-serif;
+ text-transform: uppercase;
+ font-size: 14px;
+ letter-spacing: 1px;
+ margin-left: 2px;
+ margin-top: 10px;
+}
+.input, p {
+ border: 0;
+ border-bottom: 1px solid #3f67b6;
+ width: 80%;
+ font-family: 'montserrat', sans-serif;
+ font-size: .9em;
+ padding: 7px 0;
+ color: #070707;
+ outline: none;
+}
+span {
+ font-size: .7em;
+ color: #777;
+}
+.btn {
+ font-family: "roboto", sans-serif;
+ text-transform: uppercase;
+ font-size: 15px;
+ border: 0;
+ color: #fff;
+ background:#3f67b6;
+ padding: 7px 15px;
+ box-shadow: 0px 2px 4px 0px rgba(0,0,0,.2); 
+ cursor: pointer;
+ margin-top: 15px;
+ border-radius: 10px;
+ margin-top:50px;
+}
+.btn:hover{
+    color: #fff;
+ background: #69a7d3;
+ border-radius: 10px;
+}
+.tabshow {
+ display: scroll;
+}
+.click{
+    border:none;
+    font-size: 40px;
+    margin-left: 30px;
+    background-color: #2f6e9c;
+    color:whitesmoke;
+}

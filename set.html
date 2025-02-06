@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Settings Page</title>
+    <link rel="stylesheet" href="set.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="leftbox">
+            <nav>
+                <a onclick="tabs(0)"
+                class="tab active">
+                   <!--<i class="fa fa-user"></i>-->
+<button class="click">&#9756;</button>
+            </a>
+            <a onclick="tabs(1)"
+                class="tab">
+                   <!--<i class="fa fa-credit"></i>-->
+<button class="click">&#9758;</button>
+            </a>
+            <!--<a onclick="tabs(2)"
+                class="tab">
+                   <i class="fa fa-tv"></i>
+            </a>
+            <a onclick="tabs(3)"
+                class="tab">
+                   <i class="fa fa-task"></i>
+            </a>
+            <a onclick="tabs(4)"
+                class="tab">
+                   <i class="fa fa-cog"></i>
+            </a>-->
+            </nav>
+        </div>
+        <div class="rightbox">
+            <div class="profile tabshow">
+                <h1>Personal Info</h1>
+                <h2>Full Name</h2>
+                <input type="text"
+                class="input" value="Richu Agarwal">
+                <h2>Birthday</h2>
+                <input type="text"
+                class="input" value="June 20,2004">
+                <h2>Gender</h2>
+                <input type="text"
+                class="input" value="Female">
+                <h2>Email</h2>
+                <input type="text"
+                class="input" value="agarwalrichu135@gmail.com">
+                <h2>Password</h2>
+                <input type="password"
+                class="input" value="brightcode">
+                <button
+            class="btn">Update</button>
+            </div>
+            
+            <div class="settings tabshow">
+                <h1>Account Settings</h1>
+               
+                <h2>Your Devices</h2>
+                <p></p>
+                <h2>Referrals</h2>
+                <p></p>
+                <button 
+                class="btn">Update</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="set.js"></script>
+    <script>
+        const tabBtn =
+        document.querySelectorAll(".tab");
+        const tab =
+        document.querySelectorAll(".tabshow");
+
+        function tabs(panelIndex) {
+            tab.forEach(function(node) {
+                node.style.display = "none";
+            });
+            tab[panelIndex].style.display = 
+            "block";
+        }  
+        tabs(0); 
+    </script>
+    <script>
+        $(".tab").click(function() {
+            $(this).addClass("active").sibling
+            gs().removeClass("active");
+        })
+    </script>
+</body>
+</html>
