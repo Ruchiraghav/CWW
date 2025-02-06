@@ -28,7 +28,7 @@ body, h1, ul {
   }
   @keyframes fadeBackground {
     0% {
-      background-image: url('images/image2jpg'); 
+      background-image: url('images/image2.jpg'); 
       opacity: 1;
     }
     50% {
